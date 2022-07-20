@@ -1,6 +1,8 @@
 let maxChar = 140; // sets a maximum number of characters
 
-const counter = document.querySelector('.container .counter'); 
+const counter = document.querySelector('.container .counter');
+
+const warningMessage = document.querySelector('.container .warning');
 
 const limitedTextArea = document.querySelector('.contactformtext');
 
@@ -23,5 +25,19 @@ limitedTextArea.addEventListener('keydown', function(event) { // if the user pre
         }
         // If user reaches character limit, and then backspaces, this shows the number of characters remaining 
         // as a incrementing positive number. If they start typing again, the number of characters is decreased    
+
+
+        if (maxChar === 0) {
+            console.log("Test");
+            let body = document.querySelector('body');
+            body.className = ".warning";
+            message.innerHTML = "You have reached the maximum number of characters allowed";
+        }
+        
 });
+
+// if (counter === 0) {
+//     console.log("Test");
+//     warning.innerHTML = "Test";
+// }
 
