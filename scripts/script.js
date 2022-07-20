@@ -14,8 +14,10 @@ limitedTextArea.addEventListener('keydown', function(event) { // if the user pre
         // the code after the logical or operator also stops the counter from continually incrementing
          { 
         event.preventDefault();
+        
         return;
     }
+
     if (event.key === 'Backspace') {
         maxChar = maxChar + 1;
         counter.innerHTML = maxChar; }
@@ -29,9 +31,7 @@ limitedTextArea.addEventListener('keydown', function(event) { // if the user pre
 
         if (maxChar === 0) {
             console.log("Test");
-            let body = document.querySelector('body');
-            body.className = ".warning";
-            message.innerHTML = "You have reached the maximum number of characters allowed";
+            warningMessage.innerHTML = "You have reached the maximum number of characters allowed";
         }
         
 });

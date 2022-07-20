@@ -94,9 +94,8 @@ label, input[type=text], input[type=email], input[type=submit], .container
 	padding: 10px;
 }
 
-body.warning {
-	font: rgb(244, 5, 5);
-	display: inline;
+.warning {
+	color: rgb(244, 5, 5);
 }
 
 #page
