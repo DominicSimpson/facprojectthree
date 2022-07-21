@@ -2,7 +2,13 @@ let maxChar = 140; // sets a maximum number of characters
 
 const counter = document.querySelector('.container .counter');
 
-const warningMessage = document.querySelector('.container .warning');
+const warningMessage = document.querySelector('.warning');
+
+// const container = document.querySelector('.container');
+
+    // let textContainer = document.getElementById('contactform');
+    // let value = textContainer.value;
+
 
 const limitedTextArea = document.querySelector('.contactformtext');
 
@@ -31,13 +37,12 @@ limitedTextArea.addEventListener('keydown', function(event) { // if the user pre
 
         if (maxChar === 0) {
             console.log("Test");
-            warningMessage.innerHTML = "You have reached the maximum number of characters allowed";
+            warningMessage.innerText = "You have reached the maximum number of characters allowed";
+            limitedTextArea.className = "warning";
+            // container.className = "warning";
         }
         
 });
 
-// if (counter === 0) {
-//     console.log("Test");
-//     warning.innerHTML = "Test";
-// }
+
 
