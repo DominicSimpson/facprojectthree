@@ -4,13 +4,11 @@ const counter = document.querySelector('.counter');
 
 const warningMessage = document.querySelector('.warning');
 
-let printMessage = document.querySelector('.output');
+const printMessage = document.querySelector('.output');
 
-let textInput = document.querySelector('.contactformtext').value;
+let textInput = document.querySelector('.contactformtext');
 
-
-// const textareaWalls = document.getElementById('contactform');
-
+const textareaWalls = document.getElementById('contactform');
 
 const limitedTextArea = document.querySelector('.contactformtext');
 
@@ -45,10 +43,14 @@ limitedTextArea.addEventListener('keydown', function(event) { // if the user pre
         
 });
 
-document.getElementById("myBtn").addEventListener('click', function printMessage(e) {
-    if (value === e) {e.preventDefault();    
-    printMessage.innerText = textInput.value;
+document.getElementById('myBtn').addEventListener('click', printOutput) // Submit button triggers function below
+
+    function printOutput(e) {
+    if (maxChar >= 0 && maxChar < 140) { // checks if the user has entered in any characters
+        e.preventDefault(); // stops the page from automatically refreshing   
+        console.log("Print message");
+
+        printMessage.innerHTML = `The text that you have entered in is: ${textInput.value}`;
     }
 
 }
-)

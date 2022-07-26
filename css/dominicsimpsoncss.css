@@ -81,7 +81,7 @@ p a:hover, a:focus
 	color:					#FFFF00;
 }
 
-label, input[type=text], input[type=email], input[type=submit], .container
+label, input[type=text], input[type=email], #myBtn, .container, .output
 {
 	font-family:Arial, Helvetica, sans-serif;
 	margin: 10px;
@@ -101,11 +101,7 @@ input:focus {
 
 .warning {
 	color: rgb(244, 5, 5);
-}
-
-.output {
-	font-family: 'Times New Roman', Times, serif;
-	color: #000;
+	border-color: red;
 }
 
 #page
