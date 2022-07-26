@@ -87,6 +87,11 @@ label, input[type=text], input[type=email], input[type=submit], .container
 	margin: 10px;
 }
 
+input:focus {
+	outline: 2px solid royalblue;
+	box-shadow: 1px 1px 8px 1px royalblue;
+  }
+
 .container textarea {
 	width: 75%;
 	height: 100px;
@@ -98,11 +103,18 @@ label, input[type=text], input[type=email], input[type=submit], .container
 	color: rgb(244, 5, 5);
 }
 
+.output {
+	font-family: 'Times New Roman', Times, serif;
+	color: #000;
+}
+
 #page
 {
 	width:					95%;
 	margin: 				0 auto;			
 }
+
+
 
 /* Header Section */
 
