@@ -104,6 +104,10 @@ input:focus {
 	border-color: red;
 }
 
+.warning:focus {
+	outline: none;
+}
+
 #page
 {
 	width:					95%;

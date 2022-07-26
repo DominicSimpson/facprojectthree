@@ -8,7 +8,7 @@ const printMessage = document.querySelector('.output');
 
 let textInput = document.querySelector('.contactformtext');
 
-const textareaWalls = document.getElementById('contactform');
+const textAreaWalls = document.getElementById('contactform');
 
 const limitedTextArea = document.querySelector('.contactformtext');
 
@@ -38,7 +38,11 @@ limitedTextArea.addEventListener('keydown', function(event) { // if the user pre
         if (maxChar === 0) {
             console.log("Test");
             warningMessage.innerText = "You have reached the maximum number of characters allowed";
-            limitedTextArea.className = "warning";
+            limitedTextArea.className = 'warning';
+            textAreaWalls.className = 'warning';
+        } else if (maxChar !== 0) {
+            limitedTextArea.className = '';
+            textAreaWalls.className = '';
         }
         
 });
