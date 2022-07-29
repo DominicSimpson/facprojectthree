@@ -4,19 +4,16 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Dominic Simpson - Home</title>
+	<title>Comment Box</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/dominicsimpsoncss.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 	<div id="page">
 		<!-- Header Section -->
 		<header id="pageheader">
-			<a href="#homepagetext" class="skiplink">Skip to main content</a>
-			<div>
-				<a href="index.html" title="Dominic Simpson website - Home" id="logotext"></a>
-			</div>
+			<a href="#mainsectioncontainer" class="skiplink">Skip to main content</a>
 		</header>
 		<!-- End of Header Section -->
 		<!-- Main Homepage Section -->
@@ -27,26 +24,26 @@
 				</div>
 				<form>
 					<label for="name">Name:</label><br>
-					<input type="text" id="name" name="name" placeholder="Enter your full name here"><br>
+					<input type="text" required id="userName" name="name" placeholder="Enter your full name here" /><br>
 					<label for="email">Email:</label><br>
-  					<input type="email" id="email" name="email" placeholder="Enter your email address"><br>
+  					<input type="email" required id="email" name="email" placeholder="Enter your email address" required/><br>
 					<label for="contactform">Comments:</label><br>
 					<div class="container">
 						<textarea class="contactformtext" id="contactform" name="contactform" placeholder="Enter text here" required></textarea><br>
 						<div>Number of characters left: <span class="counter">140</span>/140</div>
-						<div class="warning"></div>					
+						<div class="warning"></div>
 					</div>
-					
-					<button id="myBtn">Submit</button>
+
+					<input type="button" id="myBtn" value="Submit"/>
 				</form>
-				<div class="output" id="output"></div>
+				<div class="output"></div>
 
 			</section>
 		</div>
 		<!-- End of Main Homepage Section -->
 	</div>
-	<script src="scripts/script.js"></script>
-
 </body>
+<script src="scripts/script.js"></script>
+
 
 </html>
