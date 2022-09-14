@@ -6,7 +6,6 @@
 
 
 
-    ![2022-09-14](https://user-images.githubusercontent.com/52511353/190159194-2edc012d-e843-4a7d-b446-9411a200791a.png)
 
               
     
